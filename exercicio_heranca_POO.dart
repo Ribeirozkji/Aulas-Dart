@@ -1,6 +1,6 @@
 import 'dart:io';
 
-// Classe abstrata
+
 abstract class Funcionario {
   String nome;
   double salario;
@@ -12,7 +12,7 @@ abstract class Funcionario {
   void trabalhar();
 }
 
-// Classe Gerente
+
 class Gerente extends Funcionario {
   Gerente(String nome, double salario) : super(nome, salario);
 
@@ -28,7 +28,7 @@ class Gerente extends Funcionario {
   }
 }
 
-// Classe Caixa
+
 class Caixa extends Funcionario {
   Caixa(String nome, double salario) : super(nome, salario);
 
@@ -44,7 +44,7 @@ class Caixa extends Funcionario {
   }
 }
 
-// Classe Atendente
+
 class Atendente extends Funcionario {
   Atendente(String nome, double salario) : super(nome, salario);
 
@@ -60,7 +60,7 @@ class Atendente extends Funcionario {
   }
 }
 
-// Classe depósito para armazenar os funcionários
+
 class Deposito {
   List<Funcionario> funcionarios = [];
 
@@ -83,7 +83,7 @@ class Deposito {
   }
 }
 
-// Função principal
+
 void main() {
   Deposito deposito = Deposito();
 
